@@ -19,7 +19,4 @@ public class Customer {
     private String name;
     private String email;
     private String phoneNumber;
-    @ManyToOne
-    @JoinColumn(name = "account_account_number")
-    private Account account;
 }

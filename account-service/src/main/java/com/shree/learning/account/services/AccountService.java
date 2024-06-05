@@ -1,5 +1,6 @@
 package com.shree.learning.account.services;
 
+import com.shree.learning.account.dto.CustomerDto;
 import com.shree.learning.account.model.Account;
 import org.springframework.stereotype.Service;
 
@@ -8,9 +9,9 @@ public interface AccountService {
 
     public Account fetchAccount(String phoneNumber);
 
-    public void createAccount(Account Account);
+    void createAccount(CustomerDto customerDto);
 
-    public void updateAccount(Account Account);
+    public void updateAccount(CustomerDto customerDto);
 
     public void deleteAccount(String phoneNumber);
 
